@@ -47,30 +47,40 @@ rdbms_login <- login(
   port = 4497
 )
 
+## ----eval=TRUE----------------------------------------------------------------
 # DISPLAY THE LIST OF TABLES FROM A DATABASE OF INTEREST
 tables <- show_tables(login = rdbms_login)
 head(tables)
 
-# READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) USING AN SQL
-# QUERY
-dat <- read_rdbms(
-  login = rdbms_login,
-  query = "select * from author"
-)
+## ----eval=FALSE---------------------------------------------------------------
+# # READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) USING AN SQL
+# # QUERY
+# dat <- read_rdbms(
+#   login = rdbms_login,
+#   query = "select * from author"
+# )
 
-# READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) WHERE QUERY
-# PARAMETERS ARE SPECIFIED AS A LIST
-dat <- read_rdbms(
-  login = rdbms_login,
-  query = list(table = "author", fields = NULL, filter = NULL)
-)
+## ----eval=FALSE---------------------------------------------------------------
+# # READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) WHERE QUERY
+# # PARAMETERS ARE SPECIFIED AS A LIST
+# dat <- read_rdbms(
+#   login = rdbms_login,
+#   query = list(table = "author", fields = NULL, filter = NULL)
+# )
 
-# SELECT FEW COLUMNS FROM ONE TABLE AND LEFT JOIN WITH ANOTHER TABLE
-dat <- read_rdbms(
-    login = rdbms_login,
-    query = "select author.author_id, author.name,
-  family_author.author_id from author left join family_author on
-  author.author_id = family_author.author_id"
+## ----eval=FALSE---------------------------------------------------------------
+# # SELECT FEW COLUMNS FROM ONE TABLE AND LEFT JOIN WITH ANOTHER TABLE
+# dat <- read_rdbms(
+#     login = rdbms_login,
+#     query = "select author.author_id, author.name,
+#   family_author.author_id from author left join family_author on
+#   author.author_id = family_author.author_id"
+# )
+
+## ----echo=FALSE, eval=TRUE----------------------------------------------------
+# LOAD THE DATA OBTAINED FROM THE COMMAND ABOVE
+dat <- readRDS(
+  system.file("extdata", "server_data.RDS", package = "readepi")
 )
 
 ## ----echo=FALSE, eval=TRUE----------------------------------------------------

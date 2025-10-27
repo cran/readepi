@@ -1,7 +1,7 @@
 Package: readepi
 Title: Read Data from Relational Database Management Systems and Health
         Information Systems
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person("Karim", "Mané", , "karim.mane@lshtm.ac.uk", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9892-2999")),
@@ -44,7 +44,7 @@ LazyData: true
 RoxygenNote: 7.3.2
 SystemRequirements: odbc, libmariadbclient-dev
 NeedsCompilation: no
-Packaged: 2025-09-24 13:08:48 UTC; karimmane
+Packaged: 2025-10-27 16:40:00 UTC; karimmane
 Author: Karim Mané [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-9892-2999>),
   Emmanuel Kabuga [ctb] (ORCID: <https://orcid.org/0009-0006-2291-709X>),
@@ -60,4 +60,4 @@ Author: Karim Mané [aut, cre, cph] (ORCID:
   data.org [fnd]
 Maintainer: Karim Mané <karim.mane@lshtm.ac.uk>
 Repository: CRAN
-Date/Publication: 2025-10-01 07:00:02 UTC
+Date/Publication: 2025-10-27 17:00:02 UTC
