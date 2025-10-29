@@ -1,7 +1,7 @@
-0481a42bee823806c479e695a137eff4 *DESCRIPTION
+f518bf147f6b98f2aa85c47c92f8c66b *DESCRIPTION
 72d2d1333be19d65daaefae5708a97f5 *LICENSE
 6f60d7fef24c3bb5651c6e9aa5a5883a *NAMESPACE
-2284433ade587c9429bae253a5e9db47 *NEWS.md
+37899ea38d6c9c72bc4fec963d43ad67 *NEWS.md
 6c6a0e49d7ba70fe6edc7e90b8768c97 *R/authenticate.R
 1036646ded84459e72fa409700f6c828 *R/data-lookup_table.R
 ec7883515be9df3ad3057db3a515d344 *R/data-request_parameters.R
@@ -12,15 +12,15 @@ d25f8355a85294dce709f7b00191e056 *R/read_rdbms-helpers.R
 b82cec74b0aae04afa218cbaaac18a32 *R/read_sormas-helpers.R
 77dafd98e187131c2c846d45279b416b *R/read_sormas.R
 c6dc010f37b14929c33df1260db225c4 *R/show_tables.R
-89134daa8488aab2dbe77abeaa6ca6a7 *README.md
+fd932da1ddde64ef2ea2fccc69703de8 *README.md
 05495744b94b997a3c7a824b9f2a7159 *build/vignette.rds
 93fd52ca90ef34c0260ec47963caee15 *data/lookup_table.rda
 c2b91c23b386a7e69e90e7611018f139 *data/request_parameters.rda
-6642d5379334340dbb309a28d9974d37 *inst/CITATION
+138d46784cf9d4c1992465c658407d72 *inst/CITATION
 66b2bbfc5bdab2e1117eb7397bbddfd0 *inst/WORDLIST
 34af70c1d7eadfbb0a0a958490101485 *inst/doc/design_principle.R
 96088b38f85b8ad520987f73eb6fe18b *inst/doc/design_principle.Rmd
-eb6cf2cf6c9dea879defab15151b8660 *inst/doc/design_principle.html
+1c2fe4844f2d180807cdcae38b55da41 *inst/doc/design_principle.html
 dcaba386057477ce2de63b668d906713 *inst/doc/install_drivers.R
 cb33207031db546c02d7991e1f57b29b *inst/doc/install_drivers.Rmd
 ee1a329628f8c443bd2c9f7117d9342d *inst/doc/install_drivers.html
@@ -29,7 +29,7 @@ eb85d0edcd232e53b6d4035eae2e2a2f *inst/doc/query_parameters.R
 a599831e5bedb2698e58065d88f618f9 *inst/doc/query_parameters.html
 bfea372b65dd007bc5e11a49c8d7fd62 *inst/doc/readepi.R
 2f765cafc8418e812bd5eaf5ce990e56 *inst/doc/readepi.Rmd
-4554593899b90d6327b0a700297db7c3 *inst/doc/readepi.html
+b58b731be31701f13869d6239b63bdeb *inst/doc/readepi.html
 b8f7405674b2058fe838fc87b5466840 *inst/extdata/bad_column_name.ini
 5491ee48a8b4e7c54ef32dd8e72c6407 *inst/extdata/bad_url.ini
 b604f264bd11f4070b92510e0970d209 *inst/extdata/multiple_urls.ini
