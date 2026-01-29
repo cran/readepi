@@ -1,7 +1,7 @@
 Package: readepi
 Title: Read Data from Relational Database Management Systems and Health
         Information Systems
-Version: 1.0.3
+Version: 1.0.4
 Authors@R: c(
     person("Karim", "Mané", , "karim.mane@lshtm.ac.uk", role = "aut",
            comment = c(ORCID = "0000-0002-9892-2999")),
@@ -41,10 +41,10 @@ Config/Needs/website: epiverse-trace/epiversetheme
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 SystemRequirements: odbc, libmariadbclient-dev
 NeedsCompilation: no
-Packaged: 2025-10-29 11:56:30 UTC; karimmane
+Packaged: 2026-01-29 14:52:20 UTC; r
 Author: Karim Mané [aut] (ORCID: <https://orcid.org/0000-0002-9892-2999>),
   Emmanuel Kabuga [aut] (ORCID: <https://orcid.org/0009-0006-2291-709X>),
   Bubacarr Bah [aut, cre] (ORCID:
@@ -60,4 +60,4 @@ Author: Karim Mané [aut] (ORCID: <https://orcid.org/0000-0002-9892-2999>),
   data.org [fnd]
 Maintainer: Bubacarr Bah <Bubacarr.Bah1@lshtm.ac.uk>
 Repository: CRAN
-Date/Publication: 2025-10-29 13:40:02 UTC
+Date/Publication: 2026-01-29 15:10:02 UTC

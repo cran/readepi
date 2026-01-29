@@ -89177,7 +89177,7 @@ provides an idea of the content of each column.</p>
 <pre class="r"><code># DOWNLOAD AND SAVE THE DATA DICTIONARY IN YOUR CURRENT DIRECTORY
 path_to_dictionary &lt;- sormas_get_data_dictionary(path = getwd())
 path_to_dictionary
-#&gt; [1] &quot;/private/var/folders/xb/2fd1sx_j3pjdlqm5jnxczl6m0000gn/T/RtmpDqhqSn/Rbuild10f8713bf323d/readepi/vignettes/dictionary.&quot;</code></pre>
+#&gt; [1] &quot;/tmp/RtmpauBFnf/Rbuild21b720071d02/readepi/vignettes/dictionary.&quot;</code></pre>
 <p>A call of the <code>read_sormas()</code> function looks like
 below.</p>
 <pre class="r"><code># FETCH ALL COVID (coronavirus) CASES FROM THE TEST SORMAS INSTANCE FROM THE
@@ -89207,9 +89207,6 @@ person_id
 </th>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 date_onset
-</th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-date_admission
 </th>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 case_origin
@@ -89244,65 +89241,18 @@ contact_id
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 date_last_contact
 </th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Ct_values
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-SZ3GHH-RJEM4C-UOXBZZ-4EBOSBFQ
+T6ZLGJ-MUE7FE-LJOHL2-SVKKCKNM
 </td>
 <td style="text-align:left;">
-V2XMXK-KMG75S-WPHRF2-HZVYKNDM
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-IN_COUNTRY
-</td>
-<td style="text-align:left;">
-NOT_CLASSIFIED
-</td>
-<td style="text-align:left;">
-NO_OUTCOME
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-WOVK27-4CY6AR-S7UBL4-RYDKKGPE
-</td>
-<td style="text-align:left;">
-NA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-W5C6VE-OHUYHH-6O3BIJ-SX3D2DJY
-</td>
-<td style="text-align:left;">
-SBWO4N-3D5E3G-TWNITL-HSK2KDXI
-</td>
-<td style="text-align:left;">
-NA
+WON54L-6DMTNR-5OBN3J-UYP3KBQQ
 </td>
 <td style="text-align:left;">
 NA
@@ -89340,25 +89290,25 @@ NA
 <td style="text-align:left;">
 NA
 </td>
+<td style="text-align:left;">
+NA
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-XBXV3A-TITF67-67YKNS-HRLZCCOU
+TWRMOD-5MX5IA-3XWJ2P-37BOCP5Y
 </td>
 <td style="text-align:left;">
-QXQ5VA-24IZMB-U6FS5A-NYAO2JZU
+XC44EN-QTJUFI-6BCFWZ-UFXWSJTY
 </td>
 <td style="text-align:left;">
-2025-09-14
-</td>
-<td style="text-align:left;">
-2025-09-14
+1970-01-01
 </td>
 <td style="text-align:left;">
 IN_COUNTRY
 </td>
 <td style="text-align:left;">
-CONFIRMED
+NOT_CLASSIFIED
 </td>
 <td style="text-align:left;">
 NO_OUTCOME
@@ -89382,30 +89332,30 @@ NA
 NA
 </td>
 <td style="text-align:left;">
-SCMP4R-CJWWSU-CFWOMG-JI2UCNP4
-</td>
-<td style="text-align:left;">
-2025-09-13
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-SSTIVB-VSADJZ-QY5CYJ-CVVECAUA
-</td>
-<td style="text-align:left;">
-ROTW6C-DZM4P6-2FEEQJ-KJYQ2AUE
-</td>
-<td style="text-align:left;">
-2025-10-14
+NA
 </td>
 <td style="text-align:left;">
 NA
 </td>
 <td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WJHHRV-A2UPKG-R37W4R-3QMFCPSQ
+</td>
+<td style="text-align:left;">
+RYBAQX-ABO7P3-O3F4JC-UZNDCB4U
+</td>
+<td style="text-align:left;">
+2025-11-11
+</td>
+<td style="text-align:left;">
 IN_COUNTRY
 </td>
 <td style="text-align:left;">
-NO_CASE
+NOT_CLASSIFIED
 </td>
 <td style="text-align:left;">
 NO_OUTCOME
@@ -89427,6 +89377,56 @@ NA
 </td>
 <td style="text-align:left;">
 NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VPMCMM-YUZENC-P3JNEW-A7K62KMU
+</td>
+<td style="text-align:left;">
+U2BJQK-M2FWRH-FNY53G-XC4SCCMQ
+</td>
+<td style="text-align:left;">
+2025-11-01
+</td>
+<td style="text-align:left;">
+IN_COUNTRY
+</td>
+<td style="text-align:left;">
+SUSPECT
+</td>
+<td style="text-align:left;">
+DECEASED
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+UI23QN-CERU7E-IU5I6I-VCFISPXQ
 </td>
 <td style="text-align:left;">
 NA
