@@ -21,9 +21,8 @@ coverage](https://codecov.io/gh/epiverse-trace/readepi/branch/main/graph/badge.s
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-maturing.svg)](https://www.reconverse.org/lifecycle.html#concept)
 <!-- badges: end -->
 
-**readepi** is an R package for reading data from several health
-information systems (HIS) and relational database management systems
-(RDBMS).
+**readepi** is an R package for reading data from health information
+systems (HIS) and relational database management systems (RDBMS).
 
 **readepi** currently supports reading data from the followings:
 
@@ -31,8 +30,9 @@ information systems (HIS) and relational database management systems
   MySQL, PostgreSQL, and SQLite 
 - [DHIS2](https://dhis2.org/about-2/): an open source and web-based
   platform for managing health information  
-- [SORMAS](https://sormas.org/): an eHealth system for monitoring the
-  spread of infectious diseases and responding to outbreak situations
+- [SORMAS](https://www.sormas.org/): an eHealth system for monitoring
+  the spread of infectious diseases and responding to outbreak
+  situations
 
 **readepi** returns a data frame with the data from the specified
 system.
@@ -84,7 +84,7 @@ parameters of interest or an SQL query (for more information, see the
 **vignette**).
 
 ``` r
-# CONNECT TO THE TEST MYSQL SERVER
+# CONNECT TO A TEST MYSQL SERVER
 rdbms_login <- readepi::login(
   from = "mysql-rfam-public.ebi.ac.uk",
   type = "mysql",
@@ -98,7 +98,7 @@ rdbms_login <- readepi::login(
 # DISPLAY THE LIST OF TABLES FROM A DATABASE OF INTEREST
 tables <- readepi::show_tables(login = rdbms_login)
 
-# READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) USING AN SQL QUERY
+# READING ALL FIELDS AND RECORDS FROM ONE TABLE (`author`) USING AN SQL QUERY
 dat <- readepi::read_rdbms(
   login = rdbms_login,
   query = "select * from author"
@@ -112,7 +112,8 @@ dat <- readepi::read_rdbms(
   author.author_id = family_author.author_id"
 )
 
-# READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) WHERE QUERY PARAMETERS ARE SPECIFIED AS A LIST
+# READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) WHERE QUERY
+# PARAMETERS ARE SPECIFIED AS A LIST
 dat <- readepi::read_rdbms(
   login = rdbms_login,
   query = list(table = "author", fields = NULL, filter = NULL)
@@ -125,23 +126,23 @@ dat <- readepi::read_rdbms(
 # CONNECT TO A DHIS2 INSTANCE
 dhis2_login <- readepi::login(
   type = "dhis2",
-  from = "https://smc.moh.gm/dhis",
-  user_name = "test",
-  password = "Gambia@123"
+  from = "https://play.im.dhis2.org/stable-2-41-8",
+  user_name = "admin",
+  password = "district"
 )
 
-# IMPORT DATA FROM DHIS2 FOR THE SPECIFIED ORGANISATION UNIT AND PROGRAM IDs
+# IMPORT DATA FROM DHIS2 FOR A SPECIFIED ORGANISATION UNIT AND PROGRAM IDs
 data <- readepi::read_dhis2(
   login = dhis2_login,
-  org_unit = "GcLhRNAFppR",
-  program = "E5IUQuHg3Mg"
+  org_unit = "XjpmsLNjyrz",
+  program = "IpHINAT79UW"
 )
 ```
 
 ### Reading data from SORMAS
 
 ``` r
-# CONNECT TO THE SORMAS SYSTEM
+# CONNECT TO A SORMAS SYSTEM
 sormas_login <- readepi::login(
   type = "sormas",
   from = "https://demo.sormas.org/sormas-rest",
@@ -152,7 +153,7 @@ sormas_login <- readepi::login(
 # FETCH ALL COVID (coronavirus) CASES FROM THE TEST SORMAS INSTANCE
 covid_cases <- readepi::read_sormas(
   login = sormas_login,
-  disease = "coronavirus",
+  disease = "coronavirus"
 )
 ```
 
@@ -197,11 +198,9 @@ By contributing to this project, you agree to abide by its terms.
 citation("readepi")
 #> To cite readepi in publications use:
 #> 
-#>   Karim Mané, Emmanuel Kabuga, Bankolé Ahadzie, Abdoelnaser
-#>   Degoot, Nuredin Mohammed, Bubacarr Bah (2025). readepi: Read
-#>   Data From Relational Database Management Systems and Health
-#>   Information Systems website:
-#>   https://epiverse-trace.github.io/readepi/
+#>   Karim Mané, Emmanuel Kabuga, Bankolé Ahadzie, Abdoelnaser Degoot, Nuredin Mohammed, Bubacarr
+#>   Bah (2025). readepi: Read Data From Relational Database Management Systems and Health
+#>   Information Systems website: https://epiverse-trace.github.io/readepi/
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 

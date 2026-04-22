@@ -1,3 +1,8 @@
+# readepi 1.0.5
+
+* corrected outdated DHIS2 demonstration servers used 
+in examples (#99, @Degoot-AM) 
+
 # readepi 1.0.4
 
 * Corrected relative paths flagged by CRAN checks()

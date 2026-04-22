@@ -4,18 +4,10 @@ knitr::opts_chunk[["set"]](collapse = TRUE, comment = "#>", eval = FALSE,
                            fig.align = "center", warning = FALSE, dpi = 300L)
 
 ## ----setup, eval=TRUE---------------------------------------------------------
-# LOAD readepi
+# Load readepi
 library(readepi)
 
-## -----------------------------------------------------------------------------
-# # CONNECT TO A DHIS2 INSTANCE
-# dhis2_login <- login(
-#   type = "dhis2",
-#   from  = "https://smc.moh.gm/dhis",
-#   user_name = "test",
-#   password  = "Gambia@123"
-# )
-# 
+## ----eval=FALSE---------------------------------------------------------------
 # # CONNECT TO THE TEST MYSQL SERVER
 # rdbms_login <- login(
 #   type = "mysql",
@@ -26,31 +18,11 @@ library(readepi)
 #   db_name = "Rfam",
 #   port = 4497
 # )
-# 
-# # CONNECT TO A SORMAS SYSTEM
-# dhis2_login <- login(
-#   type = "sormas",
-#   from  = "https://demo.sormas.org/sormas-rest",
-#   user_name = "SurvSup",
-#   password  = "Lk5R7JXeZSEc"
-# )
 
-## ----eval=TRUE----------------------------------------------------------------
-# CONNECT TO THE TEST MYSQL SERVER
-rdbms_login <- login(
-  type = "mysql",
-  from = "mysql-rfam-public.ebi.ac.uk",
-  user_name = "rfamro",
-  password = "",
-  driver_name = "",
-  db_name = "Rfam",
-  port = 4497
-)
-
-## ----eval=TRUE----------------------------------------------------------------
-# DISPLAY THE LIST OF TABLES FROM A DATABASE OF INTEREST
-tables <- show_tables(login = rdbms_login)
-head(tables)
+## ----eval=FALSE---------------------------------------------------------------
+# # DISPLAY THE LIST OF TABLES FROM A DATABASE OF INTEREST
+# tables <- show_tables(login = rdbms_login)
+# head(tables)
 
 ## ----eval=FALSE---------------------------------------------------------------
 # # READING ALL FIELDS AND ALL RECORDS FROM ONE TABLE (`author`) USING AN SQL
@@ -96,9 +68,9 @@ dat |>
 # CONNECT TO A DHIS2 INSTANCE
 dhis2_login <- login(
   type = "dhis2",
-  from = "https://smc.moh.gm/dhis",
-  user_name = "test",
-  password = "Gambia@123"
+  from = "https://play.im.dhis2.org/stable-2-41-8",
+  user_name = "admin",
+  password = "district"
 )
 
 ## ----eval=TRUE----------------------------------------------------------------
@@ -144,7 +116,7 @@ data_elements |>
 # GET THE LIST OF ALL PROGRAM STAGES FOR A GIVEN PROGRAM ID
 program_stages <- get_program_stages(
   login = dhis2_login,
-  program = "E5IUQuHg3Mg",
+  program = "IpHINAT79UW",
   programs = programs
 )
 
@@ -161,7 +133,7 @@ program_stages |>
 # GET THE LIST OF ORGANISATION UNITS RUNNING THE SPECIFIED PROGRAM
 target_org_units <- get_program_org_units(
     login = dhis2_login,
-    program = "E5IUQuHg3Mg",
+    program = "IpHINAT79UW",
     org_units = org_units
   )
 
@@ -178,15 +150,8 @@ target_org_units |>
 # IMPORT DATA FROM DHIS2 FOR THE SPECIFIED ORGANISATION UNIT AND PROGRAM IDs
 data <- read_dhis2(
   login = dhis2_login,
-  org_unit = "GcLhRNAFppR",
-  program = "E5IUQuHg3Mg"
-)
-
-# IMPORT DATA FROM DHIS2 FOR THE SPECIFIED ORGANISATION UNIT AND PROGRAM NAMES
-data <- read_dhis2(
-  login = dhis2_login,
-  org_unit = "Keneba",
-  program = "Child Registration & Treatment "
+  org_unit = "XjpmsLNjyrz",
+  program = "IpHINAT79UW"
 )
 
 ## ----echo=FALSE, eval=TRUE----------------------------------------------------
@@ -202,7 +167,7 @@ data[1:50, 1:15] |>
 # ESTABLISH THE CONNECTION TO THE SORMAS SYSTEM
 sormas_login <- login(
   type = "sormas",
-  from = "https://demo.sormas.org/sormas-rest",
+  from = "https://demo.sormas.org/sormas-rest/",
   user_name = "SurvSup",
   password = "Lk5R7JXeZSEc"
 )
