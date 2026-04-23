@@ -1,4 +1,4 @@
-345383a57d7f9fb352a89372ac44c298 *DESCRIPTION
+cf6a6f31e1d286e512581eecef159bc7 *DESCRIPTION
 72d2d1333be19d65daaefae5708a97f5 *LICENSE
 6f60d7fef24c3bb5651c6e9aa5a5883a *NAMESPACE
 7f3f7847aee951c975d619c7d060443a *NEWS.md
@@ -20,16 +20,16 @@ c2b91c23b386a7e69e90e7611018f139 *data/request_parameters.rda
 66b2bbfc5bdab2e1117eb7397bbddfd0 *inst/WORDLIST
 34af70c1d7eadfbb0a0a958490101485 *inst/doc/design_principle.R
 0b2fac58a9ddb9bc03632aba6ec836af *inst/doc/design_principle.Rmd
-9f3a97101e137dfd2437d4b9d926d755 *inst/doc/design_principle.html
+6e2165a52bb05cf551ccf222b83ecf18 *inst/doc/design_principle.html
 dcaba386057477ce2de63b668d906713 *inst/doc/install_drivers.R
 ceaab5a2f42c618438f8e88642112366 *inst/doc/install_drivers.Rmd
 1c78d77c2e8af2ef1a80935abadaaa2a *inst/doc/install_drivers.html
 eb85d0edcd232e53b6d4035eae2e2a2f *inst/doc/query_parameters.R
-2b2d00b1174b63a50a6bb15ed4f5c6f7 *inst/doc/query_parameters.Rmd
-8616cbe152da780b6b21496d166e76e9 *inst/doc/query_parameters.html
-9cde826899ef4f495df1d89ea977c69b *inst/doc/readepi.R
-9646128cec8c03f788e1c03d690d1357 *inst/doc/readepi.Rmd
-bb3014d2e4c87fd4a83712754cc2f6c2 *inst/doc/readepi.html
+090529b8dda450ed5ef3f23790b970ef *inst/doc/query_parameters.Rmd
+3e9123e85f36ada9281cc772e20dc1bc *inst/doc/query_parameters.html
+cbe1dcb0a5550b5f5f13356a29a425bb *inst/doc/readepi.R
+141973809e2271b8927d5c3167514f73 *inst/doc/readepi.Rmd
+db356abd328be1abfbc0b9e334e3e7e2 *inst/doc/readepi.html
 b8f7405674b2058fe838fc87b5466840 *inst/extdata/bad_column_name.ini
 5491ee48a8b4e7c54ef32dd8e72c6407 *inst/extdata/bad_url.ini
 b604f264bd11f4070b92510e0970d209 *inst/extdata/multiple_urls.ini
@@ -91,5 +91,5 @@ c9b8f66fe43b8158eebc9fdf9a256619 *tests/testthat/test-read_dhis2.R
 98c08512618b07f41b91321750f71025 *tests/testthat/test-show_tables.R
 0b2fac58a9ddb9bc03632aba6ec836af *vignettes/design_principle.Rmd
 ceaab5a2f42c618438f8e88642112366 *vignettes/install_drivers.Rmd
-2b2d00b1174b63a50a6bb15ed4f5c6f7 *vignettes/query_parameters.Rmd
-9646128cec8c03f788e1c03d690d1357 *vignettes/readepi.Rmd
+090529b8dda450ed5ef3f23790b970ef *vignettes/query_parameters.Rmd
+141973809e2271b8927d5c3167514f73 *vignettes/readepi.Rmd
